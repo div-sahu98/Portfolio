@@ -61,7 +61,7 @@ function Home() {
         />{" "} */}
         <div className="download_resume" style={{ padding: 20, zIndex: "999" }}>
           Resume
-          <img
+          <img alt="ICON"
             src={downArrowIcon}
             style={{ height: 16, width: 24, paddingLeft: 10 }}
           />

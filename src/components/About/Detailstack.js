@@ -16,6 +16,7 @@ function Detailstack() {
       >
         Detail view{"      "}
         <img
+          alt="about"
           src={downArrowIcon}
           style={{ height: 16, width: 24, paddingLeft: 10 }}
         />

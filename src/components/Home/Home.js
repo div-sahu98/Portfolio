@@ -51,7 +51,7 @@ function Home() {
         className="download_res_aling"
         onClick={() => {
           saveFile();
-          console.log("123454323");
+        
         }}
       >
         {/* <img

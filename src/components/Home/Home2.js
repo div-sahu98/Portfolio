@@ -72,15 +72,12 @@ function Home2() {
           <h1 className="project-heading">
             Research <strong className="purple">Work </strong>
           </h1>
-          <div
-            className="detail_card"
-            style={{ color: "white", zIndex: -1, padding: 40 }}
-          >
+          <div className="detail_card" style={{ color: "white", zIndex: -1 }}>
             <h2>
               Fungal Infection Detection in Seeds using Laser Speckle Analysis &
               CNN
             </h2>
-            <div style={{ display: "flex ", gap: 40 }}>
+            <div className={"aling-research-content"}>
               {" "}
               <p style={{ textAlign: "left" }}>
                 • Study about the bio-speckle imaging technique & analysis of

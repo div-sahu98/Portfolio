@@ -13,7 +13,7 @@ import {
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css" ;
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [load, upadateLoad] = useState(true);

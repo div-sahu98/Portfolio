@@ -11,6 +11,7 @@ import dowloadResumeImage from "../../Assets/download-resume.png";
 import Particles from "react-tsparticles";
 import Particle from "../Particle";
 import { motion } from "framer-motion";
+import RandomItem from "../RandomItem/RandomItem";
 const saveFile = () => {
   fileSaver.saveAs(resumeFile, "Divyansh_9717157937.pdf");
 };
@@ -19,7 +20,7 @@ function Home() {
   return (
     <section>
       <Particle />
-
+      <RandomItem />
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
           <Row>

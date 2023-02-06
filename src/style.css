@@ -591,33 +591,29 @@ button:focus {
   color: whitesmoke;
   display: flex;
   align-items: center;
-  align-items: center;
-  align-items: center;
+
   justify-content: center;
 }
 .download_resume {
-  background-color: #2d1950;
-
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168);
-  transition: all 0.4s ease 0s;
-  width: 250;
-  height: 40px;
-  color: whitesmoke;
+  padding-right: 2px;
+  writing-mode: vertical-rl;
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin: 10;
+  height: 600px;
+  width: 30px;
+  background-color: #2d1950;
   border: 1.7px solid rgba(200, 137, 230);
   border-radius: 5px;
-  z-index: 100;
-
-  opacity: 1;
+  color: white;
+  /* box-shadow: 4px 5px 4px 3px rgba(89, 4, 168); */
+  transition: all 0.4s ease 0s;
 }
 
 .download_res_aling {
+  display: flex;
   position: fixed;
-  left: 90%;
-  top: 85%;
+  left: 95%;
+  top: 10%;
   cursor: pointer;
 }
 .detail_view_layout {
@@ -649,6 +645,24 @@ button:focus {
 }
 
 @media (max-width: 767px) {
+  .download_resume {
+    background-color: #2d1950;
+
+    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168);
+    transition: all 0.4s ease 0s;
+    width: 250;
+    height: 40px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10;
+    border: 1.7px solid rgba(200, 137, 230);
+    border-radius: 5px;
+    z-index: 100;
+
+    opacity: 1;
+  }
   .tech-icons {
     margin: 10px;
   }

@@ -62,12 +62,9 @@ function Home() {
           alt="client image"
           style={{ height: 80, width: "auto", marginLeft: 40 }}
         />{" "} */}
-        <div className="download_resume" style={{ padding: 20, zIndex: "999" }}>
-          Resume
-          <img
-            src={downArrowIcon}
-            style={{ height: 16, width: 24, paddingLeft: 10 }}
-          />
+        <div className="download_resume">
+          Want To Know More About Me!!
+          <img src={downArrowIcon} style={{ height: 16, width: 24 }} />
         </div>
       </div>
       <Home2 />

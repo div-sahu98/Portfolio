@@ -300,6 +300,9 @@ button:focus {
 }
 
 @media (max-width: 767px) {
+  .home-content {
+    padding: 0rem 0 2rem;
+  }
   .Typewriter__wrapper {
     font-size: 1.4em;
     font-weight: 500;

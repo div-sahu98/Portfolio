@@ -42,7 +42,7 @@ function Projects() {
               isBlog={false}
               title="
               Industrial Quality Control System"
-              description="Make a real-time quality control system for fault detection in casting products(for Industrial use). Real-time .jpg images are taken through QHMPL 5MP digital camera integrated with python script for capturing images after a time period. Use a deep learning neural network based image processing System and classifying the product in OK or Defected categories.This system use python based script for iterative timer based feeding of data in the model."
+              description="Make a real-time quality control system for fault detection in casting products(for Industrial use). Real-time .jpg images are taken through QHMPL 5MP digital camera integrated with python script for capturing images after a time period. Use a deep learning neural network based image processing System and classifying the product in OK or Defected categories."
             />
           </Col>
 

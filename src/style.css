@@ -142,7 +142,7 @@ button:focus {
 
 @media (max-width: 767px) {
   .techstack_layout {
-    display: grid;
+    display: grid !important;
     grid-template-columns: 1fr;
     /* z-index: -1; */
   }
@@ -866,11 +866,6 @@ button:focus {
   }
   .marquee {
     width: 90%;
-  }
-  .techstack_layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* z-index: -1; */
   }
 }
 

@@ -65,8 +65,11 @@ function Home() {
           style={{ height: 80, width: "auto", marginLeft: 40 }}
         />{" "} */}
         <div className="download_resume">
-          Want To Know More About Me!!{" "}
-          <span style={{ paddingTop: 10 ,paddingBottom:10}}> (click Here)</span>
+          Want To Know More About Me!!
+          <span style={{ paddingTop: 10, paddingBottom: 10 }}>
+            {" "}
+            (click Here)
+          </span>
           <img src={downArrowIcon} style={{ height: 16, width: 24 }} />
         </div>
       </motion.div>

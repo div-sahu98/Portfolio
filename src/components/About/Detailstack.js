@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Col } from "react-bootstrap";
 import downArrowIcon from "../../Assets/detailsStack/detaildownarrow.svg";
 import { detaildownarrow } from "../../Assets/detailsStack/detaildownarrow.svg";
+import { motion } from "framer-motion";
 function Detailstack() {
   const [openModal, setOpenModal] = useState(false);
   console.log("openModal", openModal);
@@ -27,7 +28,17 @@ function Detailstack() {
         My Work & <strong class="purple"> Learnings </strong>
       </h1>
       <div className="detail_view_card_layout">
-        <div className="detail_card">
+        <motion.div
+          whileHover={{
+            scale: 1.1,
+            boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+          }}
+          whileTap={{
+            scale: 0.9,
+            boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+          }}
+          className="detail_card"
+        >
           <h2>NowPurchase SDE-I</h2>
           <p style={{ textAlign: "left" }}>
             • Used understanding of React fundamentals & Redux to promote better
@@ -41,8 +52,18 @@ function Detailstack() {
             • Successfully designed and implemented the centralized Database of
             the IoT Middleware & different component of software for analysis.{" "}
           </p>
-        </div>
-        <div className="detail_card">
+        </motion.div>
+        <motion.div
+          whileHover={{
+            scale: 1.1,
+            boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+          }}
+          whileTap={{
+            scale: 0.9,
+            boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+          }}
+          className="detail_card"
+        >
           <h2>ZS Associate BTSA Intern</h2>
           <p style={{ textAlign: "left" }}>
             • Worked on Verso Orchestration Engine ML based platform which
@@ -57,8 +78,18 @@ function Detailstack() {
             <br />• Working on AWS S3 bucket for data loading & Hive, Putty &
             SQL for testing..
           </p>
-        </div>
-        <div className="detail_card">
+        </motion.div>
+        <motion.div
+          whileHover={{
+            scale: 1.1,
+            boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+          }}
+          whileTap={{
+            scale: 0.9,
+            boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+          }}
+          className="detail_card"
+        >
           <h2>Persistent System SDE-I Intern</h2>
           <p style={{ textAlign: "left" }}>
             • Identified web based user interaction & developed
@@ -68,8 +99,18 @@ function Detailstack() {
             <br /> • Liaised with cross-functional teams to ensure that client
             project were completed on time & with a stipulated budget
           </p>
-        </div>
-        <div className="detail_card">
+        </motion.div>
+        <motion.div
+          whileHover={{
+            scale: 1.1,
+            boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+          }}
+          whileTap={{
+            scale: 0.9,
+            boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+          }}
+          className="detail_card"
+        >
           <h2>SERB-DST Research Intern</h2>
           <p style={{ textAlign: "left" }}>
             • Detect cellular level activity using laser speckle Imaging
@@ -82,7 +123,7 @@ function Detailstack() {
             Learning & Deep learning models for data analysis and accurate
             prediction
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

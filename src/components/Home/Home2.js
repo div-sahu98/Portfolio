@@ -13,6 +13,7 @@ import Toolstack from "../About/Toolstack";
 import Projects from "../Projects/Projects";
 import Detailstack from "../About/Detailstack";
 import bioSeedImage from "../../Assets/Projects/bioSeed.bmp";
+import { motion } from "framer-motion";
 
 function Home2() {
   return (
@@ -54,9 +55,18 @@ function Home2() {
             </p>
           </Col>
           <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
+            <motion.div
+              animate={{ rotate: 360 }}
+              transition={{
+                duration: 8,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+            >
+              <Tilt>
+                <img src={myImg} className="img-fluid" alt="avatar" />
+              </Tilt>
+            </motion.div>
           </Col>
         </Row>
         <Row style={{ paddingTop: 30 }}>
@@ -67,12 +77,23 @@ function Home2() {
           <Toolstack />
           <Detailstack />
         </Row>
-        <Row>
+        <div>
           {" "}
           <h1 className="project-heading">
             Research <strong className="purple">Work </strong>
           </h1>
-          <div className="detail_card" style={{ color: "white", zIndex: -1 }}>
+          <motion.div
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+            }}
+            whileTap={{
+              scale: 0.9,
+              boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+            }}
+            className="detail_card"
+            style={{ color: "white" }}
+          >
             <h2>
               Fungal Infection Detection in Seeds using Laser Speckle Analysis &
               CNN
@@ -101,13 +122,17 @@ function Home2() {
                 style={{ height: 200, width: 200 }}
               />
             </div>
+          </motion.div>
+          <div>
+            <h1 className="project-heading">
+              Professional <strong className="purple">Skillset </strong>
+            </h1>
+            <div style={{}}>
+              <Techstack />
+            </div>
           </div>
-          <h1 className="project-heading">
-            Professional <strong className="purple">Skillset </strong>
-          </h1>
-          <Techstack />
           <Projects />
-        </Row>
+        </div>
         <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>

@@ -8,6 +8,8 @@ import Home2 from "./Home2";
 import Type from "./Type";
 import fileSaver from "file-saver";
 import dowloadResumeImage from "../../Assets/download-resume.png";
+import Particles from "react-tsparticles";
+import Particle from "../Particle";
 const saveFile = () => {
   fileSaver.saveAs(resumeFile, "Divyansh_9717157937.pdf");
 };
@@ -15,6 +17,8 @@ const saveFile = () => {
 function Home() {
   return (
     <section>
+      <Particle />
+
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
           <Row>
@@ -51,7 +55,6 @@ function Home() {
         className="download_res_aling"
         onClick={() => {
           saveFile();
-        
         }}
       >
         {/* <img

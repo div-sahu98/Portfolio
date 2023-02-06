@@ -2,17 +2,74 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { DiReact, DiPython, DiGit, DiJavascript, DiJava } from "react-icons/di";
 import { SiNextdotjs } from "react-icons/si";
-
+import { motion } from "framer-motion";
 function Techstack() {
   return (
-    <Row className="techstack_layout">
-      <Col xs={4} md={2} className="tech-icons">
+    <div className="techstack_layout">
+      <motion.div
+        whileHover={{
+          scale: 1.05,
+          boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+        }}
+        whileTap={{
+          scale: 0.9,
+          boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+        }}
+        animate={{ rotate: 360 }}
+        transition={{
+          type: "spring",
+          damping: 5,
+          mass: 2,
+          stiffness: 100,
+          repeat: Infinity,
+          repeatDelay: 2,
+        }}
+        className="tech-icons"
+      >
         <DiJava style={{ color: "white" }} />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </motion.div>
+      <motion.div
+        whileHover={{
+          scale: 1.05,
+          boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+        }}
+        whileTap={{
+          scale: 0.9,
+          boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+        }}
+        animate={{ rotate: 360 }}
+        transition={{
+          type: "spring",
+          damping: 5,
+          mass: 2,
+          stiffness: 100,
+          repeat: Infinity,
+          repeatDelay: 2,
+        }}
+        className="tech-icons"
+      >
         <DiJavascript style={{ color: "white" }} />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </motion.div>
+      <motion.div
+        whileHover={{
+          scale: 1.05,
+          boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+        }}
+        whileTap={{
+          scale: 0.9,
+          boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+        }}
+        animate={{ rotate: 360 }}
+        transition={{
+          type: "spring",
+          damping: 5,
+          mass: 2,
+          stiffness: 100,
+          repeat: Infinity,
+          repeatDelay: 2,
+        }}
+        className="tech-icons"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="76"
@@ -29,23 +86,98 @@ function Techstack() {
             fill-rule="nonzero"
           />
         </svg>
-      </Col>
+      </motion.div>
 
-      <Col xs={4} md={2} className="tech-icons">
+      <motion.div
+        whileHover={{
+          scale: 1.05,
+          boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+        }}
+        whileTap={{
+          scale: 0.9,
+          boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+        }}
+        animate={{ rotate: 360 }}
+        transition={{
+          type: "spring",
+          damping: 5,
+          mass: 2,
+          stiffness: 100,
+          repeat: Infinity,
+          repeatDelay: 2,
+        }}
+        className="tech-icons"
+      >
         <DiReact style={{ color: "white" }} />
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
+      </motion.div>
+      <motion.div
+        whileHover={{
+          scale: 1.05,
+          boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+        }}
+        whileTap={{
+          scale: 0.9,
+          boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+        }}
+        animate={{ rotate: 360 }}
+        transition={{
+          type: "spring",
+          damping: 5,
+          mass: 2,
+          stiffness: 100,
+          repeat: Infinity,
+          repeatDelay: 2,
+        }}
+        className="tech-icons"
+      >
         <SiNextdotjs style={{ color: "white" }} />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      </motion.div>
+      <motion.div
+        whileHover={{
+          scale: 1.05,
+          boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+        }}
+        whileTap={{
+          scale: 0.9,
+          boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+        }}
+        animate={{ rotate: 360 }}
+        transition={{
+          type: "spring",
+          damping: 5,
+          mass: 2,
+          stiffness: 100,
+          repeat: Infinity,
+          repeatDelay: 2,
+        }}
+        className="tech-icons"
+      >
         <DiGit style={{ color: "white" }} />
-      </Col>
+      </motion.div>
 
-      <Col xs={4} md={2} className="tech-icons">
+      <motion.div
+        whileHover={{
+          scale: 1.05,
+          boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+        }}
+        whileTap={{
+          scale: 0.9,
+          boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+        }}
+        animate={{ rotate: 360 }}
+        transition={{
+          type: "spring",
+          damping: 5,
+          mass: 2,
+          stiffness: 100,
+          repeat: Infinity,
+          repeatDelay: 2,
+        }}
+        className="tech-icons"
+      >
         <DiPython style={{ color: "white" }} />
-      </Col>
-    </Row>
+      </motion.div>
+    </div>
   );
 }
 

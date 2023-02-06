@@ -1,9 +1,17 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-
+import { motion } from "framer-motion";
 function ProjectCards(props) {
   return (
-    <Card
+    <motion.div
+      whileHover={{
+        scale: 1.05,
+        boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+      }}
+      whileTap={{
+        scale: 0.9,
+        boxShadow: "0px 0px 30px 1px rgba(0, 255, 117, 0.3)",
+      }}
       className="project-card-view"
       style={{ backgroundColor: "transparent", height: "600px" }}
     >
@@ -14,7 +22,7 @@ function ProjectCards(props) {
           {props.description}
         </Card.Text>
       </Card.Body>
-    </Card>
+    </motion.div>
   );
 }
 export default ProjectCards;

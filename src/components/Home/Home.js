@@ -10,6 +10,7 @@ import fileSaver from "file-saver";
 import dowloadResumeImage from "../../Assets/download-resume.png";
 import Particles from "react-tsparticles";
 import Particle from "../Particle";
+import { motion } from "framer-motion";
 const saveFile = () => {
   fileSaver.saveAs(resumeFile, "Divyansh_9717157937.pdf");
 };
@@ -51,7 +52,8 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <div
+      <motion.div
+        whileHover={{ scale: 1.1 }}
         className="download_res_aling"
         onClick={() => {
           saveFile();
@@ -63,10 +65,11 @@ function Home() {
           style={{ height: 80, width: "auto", marginLeft: 40 }}
         />{" "} */}
         <div className="download_resume">
-          Want To Know More About Me!!
+          Want To Know More About Me!!{" "}
+          <span style={{ paddingTop: 10 ,paddingBottom:10}}> (click Here)</span>
           <img src={downArrowIcon} style={{ height: 16, width: 24 }} />
         </div>
-      </div>
+      </motion.div>
       <Home2 />
     </section>
   );

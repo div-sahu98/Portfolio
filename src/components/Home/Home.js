@@ -25,46 +25,57 @@ function Home() {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-                </span>
-              </h1>
+              <motion.div
+                animate={{ y: 0 }}
+                transition={{ type: "tween", duration: 3 }}
+                initial={{ y: -3000 }}
+              >
+                <h1 style={{ paddingBottom: 15 }} className="heading">
+                  Hi There!{" "}
+                  <span className="wave" role="img" aria-labelledby="wave">
+                    👋🏻
+                  </span>
+                </h1>
 
-              <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> Divyansh Sahu</strong>
-              </h1>
+                <h1 className="heading-name">
+                  I'M
+                  <strong className="main-name"> Divyansh Sahu</strong>
+                </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
-              </div>
+                <div style={{ padding: 50, textAlign: "left" }}>
+                  <Type />
+                </div>
+              </motion.div>
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              />
+              <motion.div
+                animate={{ y: 0 }}
+                transition={{ type: "tween", duration: 3 }}
+                initial={{ y: 3000 }}
+              >
+                <img
+                  src={homeLogo}
+                  alt="home pic"
+                  className="img-fluid"
+                  style={{ maxHeight: "450px" }}
+                />
+              </motion.div>
             </Col>
           </Row>
         </Container>
       </Container>
       <motion.div
+        animate={{ x: 0 }}
+        transition={{ type: "tween", duration: 3 }}
         whileHover={{ scale: 1.1 }}
+        style={{ zIndex: 1 }}
+        initial={{ x: -3000 }}
         className="download_res_aling"
         onClick={() => {
           saveFile();
         }}
       >
-        {/* <img
-          src={dowloadResumeImage}
-          alt="client image"
-          style={{ height: 80, width: "auto", marginLeft: 40 }}
-        />{" "} */}
         <div className="download_resume">
           Want To Know More About Me!!
           <span style={{ paddingTop: 10, paddingBottom: 10 }}>
